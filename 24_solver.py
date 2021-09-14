@@ -2,13 +2,14 @@
 """
 Created on Wed Sep  1 07:36:42 2021
 
-@author: karlv
+@author: kvyh
 
 Given a list of input values to n_solver and a target (default 24)
 finds the combinations of operations between the values that reach
 the target value.
 n_solver([8,3], 24) will find 8*3
 n_solver([4,6], 10) will find 4+6
+n_solver([4,6,1]) will find one of (4*6)*1, (4*6)/1, 4*(6*1), ... (it considers all of them to be equivalent, so one is chosen)
 """
 
 import copy
